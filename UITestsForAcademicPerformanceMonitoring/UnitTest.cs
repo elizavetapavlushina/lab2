@@ -32,7 +32,7 @@ namespace UITestsForAcademicPerformanceMonitoring
             var listBoxItems = listBox.GetVisualDescendants().OfType<ListBoxItem>();
             var deleteButton = mainWindow.GetVisualDescendants().OfType<Button>().First(b => b.Name == "DeleteButton");
             var addButton = mainWindow.GetVisualDescendants().OfType<Button>().First(b => b.Name == "AddButton");
-            textBox.Text = "Eugene Flat";
+            textBox.Text = "Elizaveta Pavlushina";
             addButton.Command.Execute(addButton.CommandParameter);
             listBox.SelectedIndex = 0;
             deleteButton.Command.Execute(deleteButton.CommandParameter);
@@ -52,12 +52,12 @@ namespace UITestsForAcademicPerformanceMonitoring
             var listBoxItems = listBox.GetVisualDescendants().OfType<ListBoxItem>();
             var deleteButton = mainWindow.GetVisualDescendants().OfType<Button>().First(b => b.Name == "DeleteButton");
             var addButton = mainWindow.GetVisualDescendants().OfType<Button>().First(b => b.Name == "AddButton");
-            textBox.Text = "Eugene Flat";
+            textBox.Text = "Elizaveta Pavlushina";
             addButton.Command.Execute(addButton.CommandParameter);
             listBox.SelectedIndex = 0;
-            textBox.Text = "Eugene Flat";
+            textBox.Text = "Elizaveta Pavlushina";
             addButton.Command.Execute(addButton.CommandParameter);
-            textBox.Text = "Eugene Flat";
+            textBox.Text = "Elizaveta Pavlushina";
             deleteButton.Command.Execute(deleteButton.CommandParameter);
             await Task.Delay(50);
             Assert.True(listBoxItems.Count() == 1);
@@ -74,10 +74,10 @@ namespace UITestsForAcademicPerformanceMonitoring
             var deleteButton = mainWindow.GetVisualDescendants().OfType<Button>().First(b => b.Name == "DeleteButton");
             var addButton = mainWindow.GetVisualDescendants().OfType<Button>().First(b => b.Name == "AddButton");
             var saveButton = mainWindow.GetVisualDescendants().OfType<Button>().First(b => b.Name == "SaveButton");
-            textBox.Text = "Eugene Flat";
+            textBox.Text = "Elizaveta Pavlushina";
             addButton.Command.Execute(addButton.CommandParameter);
             listBox.SelectedIndex = 0;
-            textBox.Text = "Eugene Flat";
+            textBox.Text = "Elizaveta Pavlushina";
             saveButton.Command.Execute(saveButton.CommandParameter);
             await Task.Delay(50);
             Assert.True(listBoxItems.Count() == 2);
